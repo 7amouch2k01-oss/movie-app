@@ -1,0 +1,100 @@
+.movie-card {
+  /* container for the bootstrap card */
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+/* Target react-bootstrap Card internals */
+.movie-card .card {
+  width: 18rem;
+  height: 100%;
+  border: 1px solid var(--border, #e5e4e7);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg, #fff);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.movie-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+}
+
+.movie-card .card-img-top {
+  /* fixed height + crop */
+  height: 240px;
+  object-fit: cover;
+  background: #f2f2f2;
+}
+
+.movie-card .card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-card .card-title {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: var(--text-h, #08060d);
+}
+
+.movie-card .card-text {
+  margin: 0;
+  color: var(--text, #6b6375);
+  flex: 1;
+}
+
+/* Make the button look intentional inside the card */
+.movie-card .btn {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  border: 1px solid transparent;
+  background: rgba(170, 59, 255, 0.12);
+  color: var(--accent, #aa3bff) !important;
+}
+
+.movie-card .btn:hover {
+  background: rgba(170, 59, 255, 0.18);
+  border-color: rgba(170, 59, 255, 0.35);
+}
+
+/* Rating stars */
+.rating-stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.star {
+  color: #c9c9c9;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.star.filled {
+  color: #f5a623;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    margin: 10px;
+  }
+
+  .movie-card .card {
+    width: min(18rem, 92vw);
+  }
+
+  .movie-card .card-img-top {
+    height: 200px;
+  }
+}
+
+

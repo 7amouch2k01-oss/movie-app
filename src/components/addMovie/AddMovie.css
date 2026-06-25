@@ -1,0 +1,40 @@
+.add-movie-btn{
+  margin: 12px auto 18px;
+  padding: 10px 14px;
+  font-weight: 900;
+  border-radius: 14px;
+  border: 1px solid rgba(107, 44, 255, 0.35);
+  background: linear-gradient(135deg, rgba(107, 44, 255, 0.95), rgba(0, 123, 255, 0.80)) !important;
+  box-shadow: 0 10px 30px rgba(107, 44, 255, 0.22);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-movie-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(107, 44, 255, 0.28);
+  filter: saturate(1.05);
+}
+
+.add-movie-btn:active{
+  transform: translateY(0);
+}
+
+.add-movie-form{
+  margin-top: 6px;
+}
+
+
+.add-movie-form .form-control{
+  border-radius: 12px;
+  border: 1px solid rgba(59, 40, 88, 0.20);
+}
+
+.add-movie-form .form-control:focus{
+  box-shadow: 0 0 0 4px rgba(107, 44, 255, 0.15);
+  border-color: rgba(107, 44, 255, 0.55);
+}
+
+

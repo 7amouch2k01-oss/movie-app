@@ -1,0 +1,19 @@
+.movies {
+  /* cleaner layout than space-around */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 0 24px;
+  box-sizing: border-box;
+}
+
+/* If the app is centered via #root, keep things balanced */
+@media (max-width: 768px) {
+  .movies {
+    gap: 10px;
+    padding-bottom: 18px;
+  }
+}
+
